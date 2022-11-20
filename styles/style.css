@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos nav del header */
+header{
+    height: 100vh;
+    
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+
+nav img{
+    margin: 10px;
+}
+
+nav ul {
+    font-size: 34px;
+    background-color: #FCEB17;
+    display: flex;
+    justify-content: space-around;
+    border-color: black;
+    border-style:solid;
+    border-radius: 30px;
+    padding: auto;
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav div{
+    margin: 10px;
+}
+nav div span{
+    font-size: 34px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+
+
+
+/* Estilos section del header */
+
+header section{
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+}
+
+header section div {
+    width: 50%;
+    padding: 0px, 30px;
+}
+header section div img{
+  /* background-image: url("/img/unsplash_qSf_4bNsoWc.png"); */
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+}
+
+header section div h2 {
+    font-family: 'Six Caps', sans-serif;
+    font-style: normal;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 380px;
+    letter-spacing: 0.025em;
+}
+
+header section div h2 :last-child{
+    margin-top: -90px;
+}
+
+.unicornio {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
