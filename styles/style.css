@@ -88,7 +88,7 @@ header section div h2 {
 
 header section div h2 span{
     font-size: 18rem;
-    text-decoration: overline;
+    /*text-decoration: overline;   */
 }
 
 header section div h2 :last-child{
@@ -100,3 +100,22 @@ header section div h2 :last-child{
     justify-content: center;
     align-items: flex-end;
 }
+
+/* Baner "CREEMOS EN LA TRANSFORMACIÓN TECNOLÓGICA PARA DAR SOLUCIÓN A PROBLEMÁTICAS SOCIALES" */
+.baner2 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
