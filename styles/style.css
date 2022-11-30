@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
 
+@font-face {
+    font-family: SF UI Text;
+    src: url('/fonts/sf-ui-text-2-cufonfonts-webfont/SFUIText-Bold.woff');
+ }
+
 *{
     margin: 0;
     padding: 0;
@@ -10,9 +15,24 @@
 /* Estilos nav del header */
 header{
     height: 100vh;
+    background-image:url("/img/backgroundNav/Rectangle17721.png") ;
     
-
 }
+
+.background-animation{
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: backgroundAnimation 3s linear infinite;
+}
+@keyframes backgroundAnimation{
+    0% {background-image: url("/img/backgroundNav/Rectangle17721.png");}
+    33% {background-image: url("/img/backgroundNav/Rectangle17722.png");}
+    66% {background-image: url("/img/backgroundNav/Rectangle17723.png");}
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -78,16 +98,19 @@ header section div img{
 }
 
 header section div h2 {
+    position: relative;;
     font-family: 'Six Caps', sans-serif;
     font-style: normal;
-    font-size: 20rem;
-    font-weight: 400;
+    font-size: 16rem;
+    font-weight: 2em;
     line-height: 380px;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.025rem;
+    bottom: 10px;
+    left: 50px;
 }
 
 header section div h2 span{
-    font-size: 18rem;
+    font-size: 14rem;
     /*text-decoration: overline;   */
 }
 
@@ -101,21 +124,122 @@ header section div h2 :last-child{
     align-items: flex-end;
 }
 
+.unicornio img {
+    position: relative;
+    bottom: 0px;
+    right: 10rem;
+    width: 70rem;
+    height: 35rem;
+}
+
 /* Baner "CREEMOS EN LA TRANSFORMACIÓN TECNOLÓGICA PARA DAR SOLUCIÓN A PROBLEMÁTICAS SOCIALES" */
-.baner2 {
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
+.marquee {
+    background: #FCEB17;
+    box-shadow: 0px 4px 4px #000000;
+    border-radius: 0px 0px 200px 200px;
+    height: 5rem;
+    width: 100%;
+  
+    overflow: hidden;
+    position: relative;
   }
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
+  /* Marquee para los baners */
+ 
   
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  .marquee div  {
+    display: block;
+    width: 200%;
+    height: 4rem;
+  
+    position: absolute;
+    overflow: hidden;
+  
+    animation: marquee 10s linear infinite;
   }
+  
+  .marquee div span {
+    
+    width: 80%;
+    font-size: 3rem;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+  /*Fin marquee baners*/
+  .baner2 p {
+    
+    animation: marquee 10s linear infinite;
+  }
+ 
+  
+ .cards-servicios {
+    display: flex;
+ }
+
+ main div article {
+    width: 33%;
+    height: 50vh;
+    background-color: #FCEB17;
+    margin: 10px;
+    border-radius: 30px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+     
+ }
+
+ .servicios :first-child {
+    display: flex;
+    
+ }
+
+ 
+
+ .servicios div pre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ .servicios button {
+    background: #FD02BA;
+/* Negro bargen */
+
+border: 3px solid #0E090D;
+border-radius: 50px;
+ }
+    
+
+ .soluciones-container {
+    width: 100%;
+    background-color: #0E090D;
+ }
+
+
+ .nosotros span {
+    /*hacer que el texto pase a traves del contenedor*/
+    font-family: SF UI Text;
+    font-size: 2rem;
+    color: #02FE43;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    animation: marquee 10s  linear infinite ;
+ }
+ 
+ @keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.gif-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
