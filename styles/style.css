@@ -24,7 +24,7 @@ header{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    animation: backgroundAnimation 3s linear infinite;
+    animation: backgroundAnimation 5s linear infinite;
 }
 @keyframes backgroundAnimation{
     0% {background-image: url("/img/backgroundNav/Rectangle17721.png");}
@@ -175,6 +175,24 @@ header section div h2 :last-child{
     animation: marquee 10s linear infinite;
   }
  
+  .servicios {
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        animation: serviciosDonuts 2s linear infinite;
+    }
+    @keyframes serviciosDonuts{
+        0% {background-image: url("/img/backgroundMain/Property1=Frame26.png");}
+        20% {background-image: url("/img/backgroundMain/Property1=Frame 27.png");}
+        40% {background-image: url("/img/backgroundMain/Property1=Frame28.png");}
+        60% {background-image: url("/img/backgroundMain/Property1=Frame29.png");}
+        80% {background-image: url("/img/backgroundMain/Property1=Frame30.png");}
+        60% {background-image: url("/img/backgroundMain/Property1=Frame29.png");}
+        40% {background-image: url("/img/backgroundMain/Property1=Frame28.png");}
+        20% {background-image: url("/img/backgroundMain/Property1=Frame 27.png");}
+    }
+  
   
  .cards-servicios {
     display: flex;
